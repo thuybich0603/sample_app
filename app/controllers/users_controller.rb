@@ -9,7 +9,10 @@ class UsersController < ApplicationController
       per_page: Settings.users.page_items_count
   end
 
-  def show; end
+  def show
+    @microposts = @user.microposts.paginate page: params[:page],
+      per_page: Settings.users.page_items_count
+  end
 
   def new
     @user = User.new
@@ -68,7 +71,7 @@ class UsersController < ApplicationController
   end
 
   def correct_user
-    redirect_to(root_path) unless @user == current_user
+    redirect_to root_path unless current_user? @user
   end
 
   def admin_user

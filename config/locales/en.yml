@@ -90,6 +90,26 @@ en:
         link_new: "http://news.railstutorial.org/"
         text_new: "News"
         text_html: "The %{linktutorial} by %{linkMichael}"
+  microposts:
+    micropost:
+      micropost_created: "Micropost created"
+      micropost_deleted: "Micropost deleted"
+      size_error: "should be less than 5MB"
+      failed: "Error. Cannot delete."
+      sure: "You sure?"
+      alert: "Maximum file size is 5MB. Please choose a smaller file"
+      posted: "Posted %{href} ago."
+  shared:
+    form_contain: "The form contains %{error_list}"
+    micropost_form:
+      placeholder: "Compose new micropost..."
+      post: "Post"
+    user_info:
+      micropost: "micropost"
+      view_profile: "view my profile"
+    error:
+      one: "1 error"
+      other: "%{count} errors"
   users:
     users_controller:
       not_found: "User not found"
