@@ -25,6 +25,14 @@ en:
       remember_me: "Remember me on this computer"
     create:
       mess_err: "Invalid email/password combination"
+      not_activated_check_email: "Account not activated.Check your email for the activation link."
+  user_mailer:
+    account_activation:
+      title: "Sample app"
+      greetings: "Hi %{href},"
+      click_down: "Welcome to the Sample App! Click on the link below to activate your account:"
+      activate: "Activate"
+    subject: "Account activation"
   helpers:
     label:
       user:
@@ -63,6 +71,7 @@ en:
       failed: "Error: cannot delete "
       login : "Pleas log in."
     create:
+      check_email: "Please check your email to activate your account."
       success: "Welcome to the Sample App!"
       invalid: "Invalid email/password combination"
     index:
@@ -87,6 +96,10 @@ en:
         greetings: "Hi %{href},"
         click_down: "Welcome to the Sample App! Click on the link below to activate your account:"
         activate: "Activate"
+  account_activations:
+    edit:
+      activated: "Account activated!"
+      invalid: "Invalid activation link"
   static_pages:
     about:
       title: "About"
