@@ -1,6 +1,7 @@
-  users:
-    name_maximum: 50
-    email_maximum: 255
-    pass_minimum: 6
-    size: 80
-    
+users:
+  name_maximum: 50
+  email_maximum: 255
+  pass_minimum: 6
+  size: 80
+sessions:
+  checked: "1"
