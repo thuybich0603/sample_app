@@ -16,6 +16,23 @@ en:
         one: "%{count} error"
         other: "%{count} errors"    
         other: "%{count} errors"
+  password_resets:
+    new:
+      title: "Forgot password"
+      submit: "Submit"
+    create:
+      info: "Email sent with password reset instructions"
+      not_found: "Email address not found"
+    edit:
+      title: "Reset password"
+      update_password: "Update password"
+      confirmation: "Confirmation"
+    update:
+      empty_invalid: "can't be empty"
+      password_reset: "Password has been reset."
+    private:
+      check_expiration:
+        expired: "Password reset has expired."
   sessions:
     new:
       title: "Log in"
@@ -23,6 +40,7 @@ en:
       p_html: "New user? %{link}"
       sign_up: "Sign up now!"
       remember_me: "Remember me on this computer"
+      forgot_password: "(forgot password)"
     create:
       mess_err: "Invalid email/password combination"
       not_activated_check_email: "Account not activated.Check your email for the activation link."
@@ -33,6 +51,16 @@ en:
       click_down: "Welcome to the Sample App! Click on the link below to activate your account:"
       activate: "Activate"
     subject: "Account activation"
+    password_reset:
+      title: "Password reset"
+      link_preview: "To reset your password click the link below:"
+      link_detail: "Reset password"
+      expire: "This link will expire in two hours."
+      note: "If you did not request your password to be reset,
+      please ignore this email and your password will stay as it is."
+    subject: "Account activation"
+    password_reset_subject: "Password reset"
+    email: "to@example.org"
   helpers:
     label:
       user:
