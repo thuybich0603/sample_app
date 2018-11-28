@@ -1,0 +1,12 @@
+<footer class="footer">
+  <small>
+    <%= t("layout.footer.text_html", linktutorial: link_to(t(".text_tutorial"), t(".link_tutorial")), linkMichael: link_to(t(".text_michael"), t(".link_michael"))) %>
+  </small>
+  <nav>
+    <ul>
+      <li><%= link_to t("layout.footer.about"), about_path %></li>
+      <li><%= link_to t("layout.footer.contact"), contact_path %></li>
+      <li><%= link_to t("layout.footer.text_new"), t("layout.footer.link_new") %></li>
+    </ul>
+  </nav>
+</footer>
