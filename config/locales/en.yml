@@ -1,4 +1,19 @@
 en:
+  app:
+    controller:
+      success: "Welcome to the Sample App!"
+    view:
+      users:
+        name: "Name"
+        pass: "Password"
+        confirmation: "Confirmation"
+        button: "Create my account"
+        email: "Email"
+  shared:
+    form_error: "The form contains %{count_err}."
+    error:
+        one: "%{count} error"
+        other: "%{count} errors"    
   layout:
       basetitle: "Ruby on Rails Tutorial Sample App"
       header:
