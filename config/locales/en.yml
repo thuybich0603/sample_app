@@ -9,11 +9,28 @@ en:
         confirmation: "Confirmation"
         button: "Create my account"
         email: "Email"
+        button: "Create my account"
   shared:
     form_error: "The form contains %{count_err}."
     error:
         one: "%{count} error"
         other: "%{count} errors"    
+        other: "%{count} errors"
+  sessions:
+    new:
+      title: "Log in"
+      button: "Log in"
+      p_html: "New user? %{link}"
+      sign_up: "Sign up now!"
+    create:
+      mess_err: "Invalid email/password combination"
+  helpers:
+    label:
+      user:
+        name: "Name"
+        email: "Email"
+        password: "Password"
+        password_confirmation: "Confirmation"
   layout:
       basetitle: "Ruby on Rails Tutorial Sample App"
       header:
@@ -21,6 +38,11 @@ en:
         help: "Help"
         login: "Log in"
         sampleapp: "sample app"
+        user: "Users"
+        profile: "Profile"
+        account: "Account"
+        setting: "Settings"
+        lout_out: "Log out"
       footer:
         link_tutorial: "http://www.railstutorial.org/"
         text_tutorial: "Ruby on Rails Tutorial"
