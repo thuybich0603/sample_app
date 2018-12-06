@@ -22,6 +22,7 @@ en:
       button: "Log in"
       p_html: "New user? %{link}"
       sign_up: "Sign up now!"
+      remember_me: "Remember me on this computer"
     create:
       mess_err: "Invalid email/password combination"
   helpers:
