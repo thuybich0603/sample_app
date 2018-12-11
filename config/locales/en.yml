@@ -55,10 +55,38 @@ en:
         text_new: "News"
         text_html: "The %{linktutorial} by %{linkMichael}"
   users:
+    users_controller:
+      not_found: "User not found"
+      pls_log_in: "Please log in."
+      user_deleted: "User deleted"
+      profile_updated: "Profile updated"
+      failed: "Error: cannot delete "
+      login : "Pleas log in."
+    create:
+      success: "Welcome to the Sample App!"
+      invalid: "Invalid email/password combination"
+    index:
+      title: "All users"
+    user:
+      sure: "You sure?"
     new:
       title: "Sign up"
-      title_h1: "Sign up"
-      text_p: "This will be a signup page for new users."
+      detail: "This will be a signup page for new users."
+      confirm: "Confirmation"
+      create: "Create my account"
+      sign_up_now: "Sign up now!"
+    edit:
+      change: "change"
+      gravatar_link: "http://gravatar.com/emails"
+      edit: "Edit user"
+      save: "Save changes"
+      update: "Update your profile"
+    user_mailer:
+      account_activation:
+        title: "Sample app"
+        greetings: "Hi %{href},"
+        click_down: "Welcome to the Sample App! Click on the link below to activate your account:"
+        activate: "Activate"
   static_pages:
     about:
       title: "About"
