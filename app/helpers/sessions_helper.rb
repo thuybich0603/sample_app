@@ -18,7 +18,7 @@ module SessionsHelper
       @current_user ||= User.find_by id: session[:user_id]
     elsif user_id = cookies.signed[:user_id]
       user = User.find_by id: user_id
-      if user&.authenticated? cookies[:remember_token]
+      if user&.authenticated? :remember, cookies[:remember_token]
         log_in user
         @current_user = user
       end
@@ -76,5 +76,16 @@ module SessionsHelper
 
   def danger_flash
     flash.now[:danger] = t "users.create.invalid"
+  end
+
+  def check_activated user
+    if user.activated?
+      log_in user
+      check_session user
+      redirect_back_or user
+    else
+      flash[:warning] = t "sessions.create.not_activated_check_mail"
+      redirect_to root_path
+    end
   end
 end
