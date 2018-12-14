@@ -7,3 +7,11 @@ users:
   time_expired: 2
 sessions:
   checked: "1"
+micropost:
+  content_length: 140
+  maximum_size: 5
+  user_count: 50
+gravatar:
+  size: 50
+image:
+  image_type: "image/jpeg,image/gif,image/png"
