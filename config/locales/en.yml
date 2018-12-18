@@ -44,6 +44,9 @@ en:
     create:
       mess_err: "Invalid email/password combination"
       not_activated_check_email: "Account not activated.Check your email for the activation link."
+  relationship:
+    cannot_find_relation: "Cannot find relationship error"
+    no_user: "No user found"
   user_mailer:
     account_activation:
       title: "Sample app"
@@ -92,6 +95,7 @@ en:
         text_html: "The %{linktutorial} by %{linkMichael}"
   microposts:
     micropost:
+      title: "Microposts:"
       micropost_created: "Micropost created"
       micropost_deleted: "Micropost deleted"
       size_error: "should be less than 5MB"
@@ -111,6 +115,9 @@ en:
       one: "1 error"
       other: "%{count} errors"
   users:
+    follow: "Follow"
+    unfollow: "Unfollow"
+    view_profile: "view my profile"
     users_controller:
       not_found: "User not found"
       pls_log_in: "Please log in."
@@ -118,6 +125,8 @@ en:
       profile_updated: "Profile updated"
       failed: "Error: cannot delete "
       login : "Pleas log in."
+      following_title: "Following"
+      followers_title: "Followers"
     create:
       check_email: "Please check your email to activate your account."
       success: "Welcome to the Sample App!"
